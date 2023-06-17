@@ -1,3 +1,5 @@
+![image](https://github.com/FirasOmar/rick-morty/assets/10442072/cd50993e-f7de-416c-8a0f-b20c44455cb1)
+
 # RickMorty
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
