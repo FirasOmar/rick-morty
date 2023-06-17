@@ -316,25 +316,28 @@
 <div class="container" role="main">
 
 <div class="firstCharacter">
+  <div *ngIf="firstCharacter.name">
   <div class="img"><img src="{{firstCharacter.image}}" alt="first character img" width="250" height="250"></div>
   <br>
   <hr>
-  <label><b>name:  </b></label><label>{{firstCharacter.name}}</label>
+  <label><b>Name:  </b></label><label>{{firstCharacter.name}}</label>
   <br>
-  <label><b>status:  </b></label><label>{{firstCharacter.status}}</label>
+  <label><b>Status:  </b></label><label>{{firstCharacter.status}}</label>
   <hr>
+</div>
   <input type="text"  placeholder="search by name..." #firstCharacterInput>
   <button (click)="getFirstChracter(firstCharacterInput.value)">Find first character</button>
 </div>
 <div class="secondCharacter">
-  
+  <div *ngIf="secondCharacter.name">
   <div class="img"><img src="{{secondCharacter.image}}" alt="second character img" width="250" height="250"></div>
   <br>
   <hr>
-  <label><b>name:  </b></label><label>{{secondCharacter.name}}</label>
+  <label><b>Name:  </b></label><label>{{secondCharacter.name}}</label>
   <br>
-  <label><b>status:  </b></label><label>{{secondCharacter.status}}</label>
+  <label><b>Status:  </b></label><label>{{secondCharacter.status}}</label>
   <hr>
+  </div>
   <input type="text" placeholder="search by name..." #secondCharacterInput>
   
   <button (click)="getSecondCharacter(secondCharacterInput.value)">Find second character</button>
