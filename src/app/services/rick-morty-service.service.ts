@@ -7,15 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class RickMortyServiceService {
 
-  constructor(private _http:HttpClient) { 
+  constructor(private _http: HttpClient) {
     //const getCharacterUrl ='https://rickandmortyapi.com/api/character/';
   }
- 
-  getFirstCharacterByName(data:any):Observable<any>{
-    return this._http.get('https://rickandmortyapi.com/api/character/?name='+data)
+
+  getFirstCharacterByName(data: string): Observable<any> {
+    return this._http.get('https://rickandmortyapi.com/api/character/?name=' + data)
   }
-  getSecondCharacterByName(data:any):Observable<any>{
-    return this._http.get('https://rickandmortyapi.com/api/character/?name='+data)
+  getSecondCharacterByName(data: string): Observable<any> {
+    return this._http.get('https://rickandmortyapi.com/api/character/?name=' + data)
   }
- 
+
 }
