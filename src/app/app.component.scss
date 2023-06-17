@@ -1,0 +1,36 @@
+.container
+     {
+        display: flex;
+        margin: 82px auto 32px;
+        padding: 0 16px;
+      }
+
+.firstCharacter{
+   // display:inline;
+    background-color: lightblue;
+    width: 45%;
+    margin:2.5%;
+    padding:10px;
+    float:left;
+}
+.secondCharacter{
+   // display:inline;
+    background-color: lightblue;
+    width: 45%;
+    margin:2.5%;
+    padding:10px;
+    float:right;
+}
+.img{
+    text-align: center;
+}
+input{
+    padding:10px;
+    width:95%;
+}
+button{
+    width: 99%;
+    padding:10px;
+    background-color: rgb(103, 103, 225);
+    margin-top: 10px;
+}
